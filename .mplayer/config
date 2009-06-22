@@ -1,0 +1,21 @@
+# Write your default config options here!
+idx=yes
+ass=yes
+vo=vdpau,xv,fbdev
+vc=ffmpeg12vdpau,ffh264vdpau,
+ao=alsa
+mixer=Master
+subfont-text-scale=2.8
+double=yes
+monitoraspect=16:10
+spuaa=4
+subfont-osd-scale=3.2
+subpos=98
+embeddedfonts=yes
+#vf-add=screenshot
+#vf-add=ass
+af=volnorm
+alang=jp
+slang=en
+
+

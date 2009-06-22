@@ -1,0 +1,84 @@
+!------------------!
+! XFT !
+!------------------!
+ 
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintfull
+Xft*rgba: rgb
+
+! cursor !
+!Xcursor.theme:/usr/share/cursors/xorg-x11/Silver
+
+!------------------!
+! URvxt Stuff !
+!------------------!
+
+!URxvt.inputMethod: scim
+URxvt.urgentOnBell: true
+URxvt.urlLauncher: /home/wut/bin/urxvturl
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: matcher
+
+!--[term name]--!
+!URxvt*termName: rxvt-256color
+URxvt*termName: rxvt-unicode
+ 
+!--[trans and fg/bg]--!
+!URxvt*fadeColor: #191919
+URxvt*transparent: true
+!URxvt*shading: 10
+URxvt*depth:24
+URxvt*background: #191919
+!URxvt*foreground: #EEEEEE
+!URxvt*background: #353535
+URxvt*foreground: #C0C0C0
+
+URxvt*borderless: true
+ 
+!--[font]--!
+!URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-u
+!URxvt*boldFont: -*-terminus-bold-*-*-*-12-*-*-*-*-*-*-u
+!URxvt*font:      xft:DejaVu Sans Mono:pixelsize=10:autohint=true
+!URxvt*boldFont:      xft:DejaVu Sans Mono:pixelsize=10:bold:autohint=true
+!URxvt*italicFont:    xft:DejaVu Sans Mono:pixelsize=10:italic:autohint=true
+!URxvt*boldItalicFont:    xft:DejaVu Sans Mono:pixelsize=10:bold:italic:autohint=true
+
+URxvt*font:         xft:Terminus:pixelsize=8:autohint=true
+URxvt*boldFont:     xft:Terminus:pixelsize=8:bold:autohint=true
+
+!--[scrolling]--!
+URxvt*scrollBar: false
+URxvt*saveLines: 10000
+ 
+!--[tabs]--!
+!URxvt*perl-ext-common: default,tabbed
+ 
+!--[cursor]--!
+URxvt*cursorBlink: true
+
+!Black
+*color0:			#353535
+*color8:			#666666
+!Red
+*color1:			#AE4747
+*color9:			#EE6363
+!Green
+*color2:			#556B2F
+*color10:			#9ACD32
+!Yellow
+*color3:			#DAA520
+*color11:			#FFC125
+!Blue
+*color4:			#6F99B4
+*color12:			#7C96B0
+!Magenta
+*color5:			#8B7B8B
+*color13:			#D8BFD8
+!Cyan
+*color6:			#A7A15E
+*color14:			#F0E68C
+!White
+*color7:			#DDDDDD
+*color15:			#FFFFFF
