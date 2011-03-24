@@ -1,21 +1,31 @@
+[default]
 # Write your default config options here!
 idx=yes
 ass=yes
-vo=vdpau,xv,fbdev
-vc=ffmpeg12vdpau,ffh264vdpau,
+cache = 600
+vo=xv
+#vo=vdpau,xv,fbdev
+#vc=ffmpeg12vdpau,ffh264vdpau,ffvc1vdpau,
+#ao=pulse
 ao=alsa
+#afm=aac,hwdts
 mixer=Master
 subfont-text-scale=2.8
 double=yes
-monitoraspect=16:10
-spuaa=4
-subfont-osd-scale=3.2
-subpos=98
+#monitoraspect=16:10
+#subfont-osd-scale=3.2
+#subpos=98
 embeddedfonts=yes
 #vf-add=screenshot
 #vf-add=ass
 af=volnorm
-alang=jp
-slang=en
+alang=jpn,jp
+slang=eng,en
+softvol=1
+softvol-max=400
 
-
+[protocol.dvdnav]
+profile-desc="profile for dvdnav:// streams"
+mouse-movements=yes
+nocache=yes
+vf=yadif=3,hqdn3d

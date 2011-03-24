@@ -3,6 +3,7 @@
 !------------------!
  
 Xft*dpi: 96
+!Xft*dpi: 200
 Xft*antialias: true
 Xft*hinting: true
 Xft*hintstyle: hintfull
@@ -15,27 +16,49 @@ Xft*rgba: rgb
 ! URvxt Stuff !
 !------------------!
 
-!URxvt.inputMethod: scim
+!URxvt*scrollTtyOutput: false
+!URxvt*scrollWithBuffer: true
+!set c.size
+URxvt.inputMethod: SCIM
 URxvt.urgentOnBell: true
 URxvt.urlLauncher: /home/wut/bin/urxvturl
 URxvt.matcher.button: 1
-URxvt.perl-ext-common: matcher
+URxvt.perl-ext-common: default,matcher
+URxvt*cutchars: ()*<>[]{|}
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+!URxvt.matcher.pattern.2: .*\\.mkv
+!URxvt.matcher.pattern.3: .*\\.avi
+!URxvt.visualBell:       false
+
+URxvt.keysym.M-u: perl:mark-yank-urls:activate_mark_mode
+URxvt.underlineURLs: true
+URxvt.perl-lib: /home/wut/.urxvt/
+URxvt.perl-ext: selection,mark-yank-urls
 
 !--[term name]--!
 !URxvt*termName: rxvt-256color
-URxvt*termName: rxvt-unicode
+!URxvt*termName: VT
  
 !--[trans and fg/bg]--!
 !URxvt*fadeColor: #191919
 URxvt*transparent: true
-!URxvt*shading: 10
+!URxvt*shading: 20
 URxvt*depth:24
 URxvt*background: #191919
+!urxvt*background:         rgba:02f0/04f0/04f0/dddd
+!URxvt*background:rgba:0000/0000/0000/0000
 !URxvt*foreground: #EEEEEE
 !URxvt*background: #353535
 URxvt*foreground: #C0C0C0
 
-URxvt*borderless: true
+!URxvt*transparent:true
+!URxvt*tintColor:white
+!URxvt*shading:20
+
+URxvt.internalBorder:0
+URxvt.externalBorder:0
+
+!URxvt*borderless: true
  
 !--[font]--!
 !URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-u
@@ -45,9 +68,19 @@ URxvt*borderless: true
 !URxvt*italicFont:    xft:DejaVu Sans Mono:pixelsize=10:italic:autohint=true
 !URxvt*boldItalicFont:    xft:DejaVu Sans Mono:pixelsize=10:bold:italic:autohint=true
 
-URxvt*font:         xft:Terminus:pixelsize=8:autohint=true
-URxvt*boldFont:     xft:Terminus:pixelsize=8:bold:autohint=true
+dzen2.font:         xft:terminus:pixelsize=12
 
+urxvt*font: xft:Terminus (TTF):pixelsize=12,\
+            xft:Kochi Gothic:antialias=false,\
+            xft:GulimChe
+!xft:Caslon:style=Roman:hinting=false:antialias=false
+!urxvt*font: xft:DejaVu Sans Mono:pixelsize=12
+!URxvt*boldFont:     xft:terminus:size=16 \
+!xft:Kochi Gothic \
+!xft:GulimChe
+!Baekmuk Gulim
+
+!URxvt*font:         xft:Kochi Gothic:pixelsize=12
 !--[scrolling]--!
 URxvt*scrollBar: false
 URxvt*saveLines: 10000
@@ -71,14 +104,18 @@ URxvt*cursorBlink: true
 *color3:			#DAA520
 *color11:			#FFC125
 !Blue
-*color4:			#6F99B4
-*color12:			#7C96B0
+*color12:			#6F99B4
+*color4:			#7C96B0
 !Magenta
 *color5:			#8B7B8B
 *color13:			#D8BFD8
 !Cyan
 *color6:			#A7A15E
 *color14:			#F0E68C
+!*color6:	#B5D2DD
+!*color14:	#82A9CC
 !White
 *color7:			#DDDDDD
 *color15:			#FFFFFF
+
+
