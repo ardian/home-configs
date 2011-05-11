@@ -191,7 +191,7 @@ end
 stationmenu = {}
 
 function station_menu()
-   local cmd = "cat /tmp/pianobar_stations"
+   local cmd = "cat /home/wut/.config/pianobar/stations"
    local f = io.popen(cmd)
 
    for l in f:lines() do
@@ -204,10 +204,11 @@ function station_menu()
 end
 station_menu()
 
-pandoramenu = awful.menu({ items = { { "Stations", stationmenu },
-                                    { "open terminal", terminal }
-                                  }
-                        })
+--pandoramenu = awful.menu({ items = { { "Stations", stationmenu },
+--                                    { "open terminal", terminal }
+--                                  }
+--                        })
+pandoramenu = awful.menu({ items = stationmenu })
 
 function pandora (mode)
  if mode == "pause" then

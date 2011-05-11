@@ -54,7 +54,8 @@ theme.ff_icon = "/home/wut/.config/awesome/icons/firefox_icon.png"
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = "/home/wut/.config/awesome/themes/default/submenu.png"
 theme.menu_height   = "16"
-theme.menu_width    = "100"
+theme.menu_width    = "300"
+theme.menu_border_color = "#343434"
 
 -- You can add as many variables as
 -- you wish and access them by using
